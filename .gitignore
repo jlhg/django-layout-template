@@ -23,5 +23,8 @@ build
 # Emacs buffer files:
 *#*#
 
+# Emacs backup files:
+*~
+
 # Rope project
 .ropeproject

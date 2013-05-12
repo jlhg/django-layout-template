@@ -18,7 +18,6 @@ build
 *.log
 
 # Setting files
-/*/*/settings/dev.py
 /*/*/settings/production.py
 
 # Emacs buffer files:

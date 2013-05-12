@@ -49,9 +49,7 @@ upload_file = UploadFile.objects.get(...)
 
 `settings/dev.py` is for local development.
 
-`settings/production.py` is for deployment.
-
-**Do not** commit these two files.
+`settings/production.py` is for deployment. ( Do not commit this file)
 
 ## Creating your project
 

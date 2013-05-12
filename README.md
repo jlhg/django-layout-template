@@ -9,7 +9,7 @@ This project layout is based on the following links:
 
 There are some changes:
 
-### Split models.py and views.py into several files.
+### Splitting models.py and views.py into several files.
 
 To establish new model, for example, UploadFile, you can create new file named
 `upload_file.py` in `models` directory:
@@ -42,7 +42,7 @@ from example_app.models import UploadFile
 upload_file = UploadFile.objects.get(...)
 ```
 
-### Split settings.py into several files.
+### Splitting settings.py into several files.
 
 [https://code.djangoproject.com/wiki/SplitSettings#SimplePackageOrganizationforEnvironments](https://code.djangoproject.com/wiki/SplitSettings#SimplePackageOrganizationforEnvironments)
 

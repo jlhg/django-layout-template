@@ -56,15 +56,14 @@ upload_file = UploadFile.objects.get(...)
 ## Creating your project
 
 ```bash
-$ django-admin.py startproject
---template=https://github.com/jlhg/django-layout-template/zipball/master project_name
+$ django-admin.py startproject --template=https://github.com/jlhg/django-layout-template/zipball/master project_name
 ```
 
 ## How to run server - for local development
 
 ```bash
-cd /path/to/your_project_root
-python manage.py runserver --settings=your_project_name.settings.dev
+$ cd /path/to/your_project_root
+$ python manage.py runserver --settings=your_project_name.settings.dev
 ```
 
 ## How to run server - for deployment
@@ -75,7 +74,7 @@ For apache2: [https://docs.djangoproject.com/en/1.2/howto/deployment/modwsgi/](h
 2. Add the following contents to `http.conf`:
 
 ```
-WSGIScriptAlias / /path/to/apache2.wsgi.py
+WSGIScriptAlias / /path/to/wsgi.py
 ```
 
 3. Restart apache2:

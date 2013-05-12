@@ -3,7 +3,7 @@ from defaults import *
 # Allowed hosts. Add host domain or IP to it. Do not add '*'.
 # Example: ['www.example.com']
 # https://docs.djangoproject.com/en/1.5/releases/1.5/#allowed-hosts-required-in-production
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 # Secret key generator: http://www.miniwebtool.com/django-secret-key-generator/
 # https://docs.djangoproject.com/en/dev/ref/settings/#std:setting-SECRET_KEY

@@ -70,7 +70,7 @@ $ python manage.py runserver --settings=your_project_name.settings.dev
 
 For apache2: [https://docs.djangoproject.com/en/1.2/howto/deployment/modwsgi/](https://docs.djangoproject.com/en/1.2/howto/deployment/modwsgi/)
 
-1. Edit `settings/production.py` for your configuration.
+1. Edit `settings/production.py` and add a new secret key.
 2. Install mod_wsgi:
 
 ```bash

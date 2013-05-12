@@ -5,6 +5,7 @@ from defaults import *
 # https://docs.djangoproject.com/en/1.5/releases/1.5/#allowed-hosts-required-in-production
 ALLOWED_HOSTS = ['127.0.0.1']
 
+# You should generate a new secret key for production.
 # Secret key generator: http://www.miniwebtool.com/django-secret-key-generator/
 # https://docs.djangoproject.com/en/dev/ref/settings/#std:setting-SECRET_KEY
 SECRET_KEY = ''

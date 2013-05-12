@@ -7,7 +7,7 @@ This project layout is based on the following links:
 * [http://stackoverflow.com/questions/11216829/django-directory-structure](http://stackoverflow.com/questions/11216829/django-directory-structure)
 * [https://github.com/twoscoops/django-twoscoops-project](https://github.com/twoscoops/django-twoscoops-project)
 
-There are something changed:
+There are some changes:
 
 ### Split models.py and views.py into several files.
 

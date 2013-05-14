@@ -66,7 +66,7 @@ $ cp -r example_app your_app_name
 
 ```bash
 $ cd /path/to/your_project_root
-$ python manage.py runserver --settings=your_project_name.settings.dev
+$ python manage.py runserver
 ```
 
 ## How to run server - for deployment

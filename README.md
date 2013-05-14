@@ -11,7 +11,7 @@ There are some changes:
 
 ### Splitting models.py and views.py into several files.
 
-To establish new model, for example, UploadFile, you can create new file named
+To establish a new model, for example, UploadFile, you can create new file named
 `upload_file.py` in `models` directory:
 
 example_app/models/upload_file.py
@@ -54,6 +54,12 @@ upload_file = UploadFile.objects.get(...)
 
 ```bash
 $ django-admin.py startproject --template=https://github.com/jlhg/django-layout-template/zipball/master project_name
+```
+
+To create a new application, just copy `example_app` in your project.
+
+```bash
+$ cp -r example_app your_app_name
 ```
 
 ## How to run server - for local development

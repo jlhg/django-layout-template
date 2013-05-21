@@ -1,3 +1,3 @@
-from example_app.models.sample_model import SampleModel
+from example_app.models.post_message import PostMessage
 
-__all__ = ['SampleModel']
+__all__ = ['PostMessage']

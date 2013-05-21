@@ -1,5 +1,54 @@
 {% extends "example_app/base.html" %}
 
 {% block content %}
-{{ message }}
+  <h1>GUESTBOOK</h1>
+
+  {% block message %}
+    {% if is_post %}
+      <p> Submit successfully!</p>
+    {% endif %}
+  {% endblock message %}
+
+  {% if post_message_form %}
+    <form action="/post/" method="post" enctype="multipart/form-data">{% csrf_token %}
+      <div class="field_wrapper">
+        <label for="id_name">Name</label>
+        {{ post_message_form.name|safe }}
+      </div>
+
+      <div class="field_wrapper">
+        <label for="id_message">Text</label><br>
+        {{ post_message_form.message|safe }}
+      </div>
+
+      <div class="field_wrapper">
+        <label for="id_message">Upload</label>
+        {{ post_message_form.upload_file|safe }}
+      </div>
+
+      <div class="field_wrapper">
+        <input type="submit", value="Submit">
+      </div>
+    </form>
+  {% endif %}
+
+  {% if messageset %}
+    {% for m in messageset %}
+      <br>
+      <table>
+        <tbody>
+          <tr>
+            <th>Name</th>
+            <td>{{ m.name }}</td>
+            <th>Date</th>
+            <td>{{ m.post_date }}</td>
+          </tr>
+          <tr>
+            <td colspan="4">{{ m.message }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+    {% endfor %}
+  {% endif %}
 {% endblock content %}

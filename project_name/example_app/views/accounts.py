@@ -3,8 +3,8 @@ from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponseRedirect
 from django.template import RequestContext
 from django.shortcuts import render_to_response
-from transcriptome import forms
-from transcriptome.views.decorator import login_checker
+from example_app import forms
+from example_app.views.decorator import login_checker
 
 
 @csrf_protect
